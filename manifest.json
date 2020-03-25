@@ -1,0 +1,33 @@
+{
+  "name": "Numbered Tabs",
+  "version": "1.0.0",
+  "description": "Add a numeric prefix before the tab's title.",
+  "author": "Ridvan Altun",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "images/icon16.png",
+      "32": "images/icon32.png",
+      "64": "images/icon64.png"
+    },
+    "default_title": "Numbered Tabs"
+  },
+  "commands": {
+    "toggle_title": {
+      "suggested_key": {
+        "default": "Alt+Q"
+      },
+      "description": "Triggers title change"
+    }
+  },
+  "manifest_version": 2,
+  "permissions": ["tabs", "<all_urls>", "management"]
+}
